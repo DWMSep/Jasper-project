@@ -27,5 +27,6 @@ Jp %>%
         ggplot() +     
         geom_boxplot(aes(y = Temperature, x = colour)) + # making the boxplot to hae the temperature on the y axis and the colour on the x axis                          
         theme(axis.text.x = element_text(angle = 45, hjust = 1))                                                       +      
-        facet_wrap(vars(variable), scales = "free") # facet_wrap to have the boxplot for each variable                         
+        facet_wrap(vars(variable), scales = "free") # facet_wrap to have the boxplot for each variable         
+
                       
