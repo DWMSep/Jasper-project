@@ -15,7 +15,7 @@ library(knitr)
 # Reading in csv----
 
 Jp <- read.csv("R_Deliverable.csv")
-jp <- Jp
+Jp
 
 # tidying up the data----
 ## change the names in colour and add back to Jp
@@ -39,6 +39,9 @@ Jp %>%
         geom_boxplot(aes(y = Temperature, x = colour)) + # making the boxplot to hae the temperature on the y axis and the colour on the x axis 
         ggtitle("Boxplot of temperature change by colour") +
         theme(plot.title = element_text(hjust=0.5))+
+        labs(caption = "Figure 1: Boxplot showing the temperature (°C) before (temp_bef), after (temp_aft),
+and total change in temperature (temp_change) of different Memetes leaf colours") +
+         theme(plot.caption = element_text(hjust=0.5,face = "italic"))+
         theme(axis.text.x = element_text(angle = 45, hjust = 1))                                                       +      
         facet_wrap(vars(variable), scales = "free") # facet_wrap to have the boxplot for each variable         
 
