@@ -44,7 +44,7 @@ and total change in temperature (temp_change) of different Memetes leaf colours"
          theme(plot.caption = element_text(hjust=0.5,face = "italic"))+
         theme(axis.text.x = element_text(angle = 45, hjust = 1))                                                       +      
         facet_wrap(vars(variable), scales = "free") # facet_wrap to have the boxplot for each variable         
-
+ 
 
 
 
